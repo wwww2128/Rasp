@@ -1,2 +1,2 @@
 # Rasp
-RaspberryPi developmet repository
+RaspberryPi development repository
