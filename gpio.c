@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <wiringPi.h>
+#include <stdlib.h>
 #include <signal.h>
+
 #define RED	 0
 #define GREEN	 1
 #define YELLOW	 2
@@ -23,13 +25,13 @@ void stopisr()
 	digitalWrite(RED, LOW);
 	digitalWrite(GREEN, LOW);
 	digitalWrite(YELLOW, LOW);
-	printf("done \n");
+	exit(0);
 }
 
 void gpioisr()
 {
        if(++intv > 8) intv = 0;
-       printf("GPIO interrupt occured..\n");
+       printf("GPIO interrupt occured.%d.\n",intv);
 }
 
 int main()
