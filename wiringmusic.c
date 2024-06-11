@@ -6,10 +6,14 @@
 #define SPKR 	6
 #define TOTAL	32
 
+void struct {
+	int a;
+}
+
 void cleanup(int signum) {
-    // LED 끄기
+    // spkr  끄기
     digitalWrite(SPKR, LOW);
-    printf("LED가 꺼졌습니다.\n");
+    printf("스피커가 꺼졌습니다.\n");
 	 exit(0);
 }
 
