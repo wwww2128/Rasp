@@ -31,11 +31,11 @@ int main() {
     while (1) {
         // LED 켜기
         digitalWrite(LED_PIN, HIGH);
-        delay(1000); // 1초 대기
+        delay(500); // 1초 대기
 
         // LED 끄기
         digitalWrite(LED_PIN, LOW);
-        delay(1000); // 1초 대기
+        delay(500); // 1초 대기
     }
 
     return 0;
